@@ -1,9 +1,12 @@
 package com.example.demo;
 
-import lombok.Builder;
+import java.util.UUID;
+
 import lombok.Data;
 
 @Data
-@Builder
 public class StudentUtils {
+	public static String generateId() {
+		return UUID.randomUUID().toString();
+	}
 }
